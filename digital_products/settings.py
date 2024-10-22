@@ -1,10 +1,9 @@
 import os
 from pathlib import Path
-from sys import path
 
 from datetime import timedelta
 
-from .local_settings import *
+from .local_settings import *  # noqa: F403
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,6 +22,8 @@ INSTALLED_APPS = [
 
     "users",
     "products",
+    "payments",
+    "subscriptions",
 ]
 
 MIDDLEWARE = [
